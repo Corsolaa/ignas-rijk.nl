@@ -1,0 +1,126 @@
+.italic {
+    font-style: italic;
+}
+
+.fc-magenta {
+    color: var(--magenta);
+}
+
+.fc-red{
+    color: var(--red);
+}
+
+.mr-5 {
+    margin-right: 5px !important;
+}
+
+.bg-w {
+    background: var(--warmWit);
+}
+
+body.construct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+    width: 100%;
+    background: url("https://www.brunobouwman.nl/images/src/marmer.webp") center fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 0;
+    align-items: start;
+    flex-direction: column;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        width: 100%;
+
+        .sub {
+            text-align: center;
+        }
+    }
+}
+
+.logo {
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 25px;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+
+    width: 100%;
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        cursor: pointer;
+        padding: 25px;
+        transition: all .2s ease-in-out;
+
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        flex-direction: row;
+
+        .text {
+            align-items: start;
+            width: 400px;
+
+            .sub {
+                text-align: start;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .column {
+        max-height: 100%;
+    }
+
+    header {
+        flex-direction: row;
+
+        .logo {
+            width: fit-content;
+            justify-content: start;
+            border-bottom-right-radius: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .contact {
+        flex-direction: row;
+
+        p {
+            justify-content: start;
+            margin-left: 25px;
+        }
+
+        a {
+            text-align: start;
+        }
+    }
+}
