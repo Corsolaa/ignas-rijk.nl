@@ -1,3 +1,8 @@
+body {
+    background: url(https://www.brunobouwman.nl/images/src/marmer.webp) center fixed;
+    background-size: cover;
+}
+
 .italic {
     font-style: italic;
 }

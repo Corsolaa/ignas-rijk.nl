@@ -16,14 +16,20 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
+<header class="categories">
     <div class="logo">
         <img src="https://www.brunobouwman.nl/images/src/ignas-logo-23.webp" alt="">
-        <p class="title is-size-1">Ignas Rijkssss</p>
+        <p class="title is-size-1">Ignas Rijk</p>
+        <p class="sub is-size-4">Daar waar twee artistieke rechterhanden gevraagd worden!</p>
     </div>
-    <nav class="dis_non_tablet">
-        <?php
-        echo wp_nav_menu("Primary Menu");
-        ?>
-    </nav>
+
+    <div class="text">
+        <p></p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum deleniti, doloremque fugit, laudantium
+            mollitia natus non quia reprehenderit, sint vero voluptatem. Animi asperiores autem commodi ipsam iusto
+            maiores nihil nobis sapiente sint vitae. Aliquam asperiores dolores ducimus laboriosam molestias numquam
+            quis vero! Aspernatur, consequuntur doloremque eaque hic quam sit!
+        </p>
+    </div>
 </header>
