@@ -19,7 +19,7 @@
 <header>
     <div class="logo">
         <img src="https://www.brunobouwman.nl/images/src/ignas-logo-23.webp" alt="">
-        <p class="title is-size-1">Ignas Rijk</p>
+        <p class="title is-size-1">Ignas Rijkssss</p>
     </div>
     <nav class="dis_non_tablet">
         <?php

@@ -82,11 +82,24 @@ section {
     aspect-ratio: 1;
     width: 100%;
 
-    img {
+    a {
+        display: block;
         width: 100%;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 3px solid var(--lichtZwart);
+    }
+
+    img {
         height: 100%;
         object-fit: cover;
-        border-radius: 8px;
+
+        transition: .2s ease-in-out scale;
+    }
+
+    img:hover {
+        scale: 104%;
     }
 }
 
@@ -112,9 +125,9 @@ header {
             list-style: none;
 
             li {
-                padding: 15px 25px;
                 cursor: pointer;
                 user-select: none;
+                transition: scale .1s ease-in-out;
             }
 
             li:hover {
@@ -151,12 +164,15 @@ main {
     .column.is-8 {
         width: calc(100% / 1.5);
     }
+
     .column.is-4 {
         width: calc(100% / 3);
     }
+
     .columns {
 
     }
+
     .column {
         padding: 2rem;
     }

@@ -18,17 +18,15 @@ get_header();
                 'posts_per_page' => -1,
             );
 
-            $cpt_query = new WP_Query($args);
+            $query = new WP_Query($args);
 
-            if ($cpt_query->have_posts()) :
-                while ($cpt_query->have_posts()) :
-                    $cpt_query->the_post();
-                    // Output your post data here
-                    the_title(); // Example output: Post Title
-                    the_content(); // Example output: Post Content ?>
+            if ($query->have_posts()) :
+                while ($query->have_posts()) :
+                    $query->the_post();
+                    ?>
                     <div class="column is-4">
-                        <a class="img_container" href="">
-                            <img src="https://www.brunobouwman.nl/images/src/ignas_chairs-25.webp" alt="">
+                        <a class="img_container" href="<?php echo get_page_link() ?>">
+                            <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
                             <i class="bg-w is-size-1 fa-solid fa-square-up-right"></i>
                         </a>
                     </div>

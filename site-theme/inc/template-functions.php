@@ -9,6 +9,7 @@ function my_theme_styles()
 {
     $style_dir_url = get_template_directory_uri() . "/assets/css/";
 
+    wp_enqueue_style('standard', $style_dir_url . "standard.css");
     wp_enqueue_style('main', $style_dir_url . "main.css");
     wp_enqueue_style('box_model', $style_dir_url . "box_model.css");
     wp_enqueue_style('columns', $style_dir_url . "columns.css");
@@ -16,6 +17,7 @@ function my_theme_styles()
     wp_enqueue_style('styling', $style_dir_url . "styling.css");
 
     wp_enqueue_style('img_container', $style_dir_url . "img_container.css");
+    wp_enqueue_style('header', $style_dir_url . "header.css");
 }
 
 function tt3child_register_acf_blocks()

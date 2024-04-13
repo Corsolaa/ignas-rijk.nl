@@ -8,7 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-page
  */
 
-get_header();?>
+get_header("categorie");?>
 
     <main class="categorie">
         <div class="content">
