@@ -1,0 +1,15 @@
+:root {
+    --pixels: 12px;
+}
+
+.p_1 {
+    padding: var(--pixels);
+}
+
+.p_2 {
+    padding: calc(2 * var(--pixels));
+}
+
+mt_1 {
+    margin-top: var(--pixels);
+}

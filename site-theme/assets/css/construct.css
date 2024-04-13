@@ -1,22 +1,3 @@
-.italic {
-    font-style: italic;
-}
-
-.fc-magenta {
-    color: var(--magenta);
-}
-
-.fc-red{
-    color: var(--red);
-}
-
-.mr-5 {
-    margin-right: 5px !important;
-}
-
-.bg-w {
-    background: var(--warmWit);
-}
 
 body.construct {
     display: flex;

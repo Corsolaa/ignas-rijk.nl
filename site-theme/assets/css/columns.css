@@ -1,0 +1,39 @@
+.columns {
+
+}
+
+.column {
+    margin-top: calc(2 * var(--pixels));
+}
+
+.column:first-child {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .column.is-4 {
+        width: calc(100% / 2);
+        padding: var(--pixels);
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+}
+
+@media only screen and (min-width: 800px) {
+    .column.is-4 {
+        width: calc(100% / 3);
+        padding: var(--pixels);
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .img_container i {
+        height: 65px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+}

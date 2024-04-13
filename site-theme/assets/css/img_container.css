@@ -1,0 +1,29 @@
+.img_container {
+    position: relative;
+
+    img {
+        border: 3px solid var(--lichtZwart);
+    }
+
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1;
+        height: 45px;
+
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+
+        border-radius: 9px;
+        transition: all .2s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .img_container i {
+        height: 65px;
+    }
+}

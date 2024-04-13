@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LAYOUT</title>
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/construct.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="site-theme/assets/css/main.css">
+    <link rel="stylesheet" href="site-theme/assets/css/construct.css">
+    <link rel="stylesheet" href="site-theme/assets/css/layout.css">
+    <link rel="stylesheet" href="site-theme/assets/css/styling.css">
     <link rel="stylesheet" href="http://www.brunobouwman.nl/standard.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
