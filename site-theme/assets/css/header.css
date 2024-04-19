@@ -1,68 +1,110 @@
+:root {
+    --heightHeader: 120px;
+    --heightFooter: 80px;
+}
+
+main {
+    padding-bottom: var(--heightFooter);
+}
+
 header {
     max-width: 1340px;
     margin: auto;
-    padding: 12px 36px;
+
+    height: var(--heightHeader);
 
     nav {
+        position: fixed;
+        bottom: 0;
+
+        width: 100%;
+        height: var(--heightFooter);
+
+        z-index: 1;
+
         .menu-item {
-            background: var(--zwart);
-            border: 3px solid var(--lichtZwart);
-            border-radius: 8px;
+            background: var(--warmWit);
+            width: 100%;
+            height: 100%;
+
+            border-top: 3px solid var(--lichtZwart);
 
             a {
-                display: block;
-                text-decoration: none;
-                color: white;
-                padding: 15px 25px;
-            }
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            a:hover {
-                color: white !important;
+                text-decoration: none;
+                color: var(--lichtZwart);
+                padding: 15px 25px;
+
+                height: 100%;
             }
         }
+    }
+
+    .logo {
+        height: var(--heightHeader);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        border-bottom: 3px solid var(--lichtZwart);
+        border-radius: 0;
+        background: var(--warmWit);
+
+
+        width: 100%;
+        justify-content: center;
+
+        padding: 15px;
     }
 }
 
 header.categories {
-    flex-direction: column;
-    padding: 12px;
-    .logo {
-        display: flex;
-        flex-direction: column;
+    height: fit-content;
 
-        gap: 15px;
+    .text {
+        margin-top: var(--heightHeader);
+    }
+}
 
-        background: var(--warmWit);
-        border: 3px solid var(--lichtZwart);
-        border-radius: 8px;
+@media only screen and (min-width: 600px) {
+    header {
+        height: fit-content;
 
-        padding: 25px;
+        padding: calc(3 * var(--pixels));
+        margin-bottom: calc(-3 * var(--pixels));
 
-        .sub {
-            max-width: 320px;
+        .logo {
+            position: static;
+
+            width: fit-content;
+            justify-content: start;
+
+            border: 3px solid var(--lichtZwart);
+            border-radius: 8px;
         }
 
-        img {
-            width: 150px;
-            height: auto;
-            aspect-ratio: 1;
-        }
+        nav {
+            position: static;
+            width: fit-content;
+            height: fit-content;
 
-        p {
-            text-align: center;
+            .menu-item {
+                width: fit-content;
+                height: fit-content;
+
+                border: 3px solid var(--lichtZwart);
+                border-radius: 8px;
+
+                a {
+                    height: fit-content;
+                }
+            }
         }
     }
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        padding: 25px;
-
-        background: var(--warmWit);
-        border: 3px solid var(--lichtZwart);
-        border-radius: 8px;
+    main {
+        padding: 0;
     }
 }

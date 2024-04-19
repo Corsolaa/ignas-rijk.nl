@@ -21,9 +21,11 @@
         <img src="https://www.brunobouwman.nl/images/src/ignas-logo-23.webp" alt="">
         <p class="title is-size-1">Ignas Rijk</p>
     </div>
-    <nav class="dis_non_tablet">
-        <?php
-        echo wp_nav_menu("Primary Menu");
-        ?>
+    <nav>
+        <div class="menu-item">
+            <a class="is-size-2" style="" href="#">
+                <i style="margin-right: 15px" class="is-size-2 fa-solid fa-square-phone-flip"></i>
+                contact</a>
+        </div>
     </nav>
 </header>

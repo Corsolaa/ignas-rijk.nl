@@ -25,7 +25,7 @@ get_header();
                     $query->the_post();
                     ?>
                     <div class="column is-4">
-                        <a class="img_container" href="<?php echo get_page_link() ?>">
+                        <a class="container" href="<?php echo get_page_link() ?>">
                             <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
                             <i class="bg-w is-size-1 fa-solid fa-square-up-right"></i>
                         </a>

@@ -18,6 +18,8 @@ function my_theme_styles()
 
     wp_enqueue_style('img_container', $style_dir_url . "img_container.css");
     wp_enqueue_style('header', $style_dir_url . "header.css");
+
+    wp_enqueue_style('category', $style_dir_url . "category.css");
 }
 
 function tt3child_register_acf_blocks()

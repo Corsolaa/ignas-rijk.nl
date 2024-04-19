@@ -11,10 +11,31 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .column.is-4 {
-        width: calc(100% / 2);
+    .column {
         padding: var(--pixels);
         margin: 0;
+    }
+
+    .column.is-4 {
+        width: calc(100% / 2);
+    }
+
+    .column.is-8 {
+        aspect-ratio: 2;
+
+        .container {
+            aspect-ratio: 2;
+        }
+    }
+
+    .column.is-8.txt {
+        height: fit-content;
+        aspect-ratio: 0;
+
+        .container {
+            height: fit-content;
+            aspect-ratio: 0;
+        }
     }
 }
 
@@ -24,8 +45,15 @@
 @media only screen and (min-width: 800px) {
     .column.is-4 {
         width: calc(100% / 3);
-        padding: var(--pixels);
-        margin: 0;
+    }
+    .column.is-8 {
+        width: calc(2 * (100% / 3));
+        aspect-ratio: 2 !important;
+
+        .container {
+            height: 100% !important;
+            aspect-ratio: auto;
+        }
     }
 }
 
