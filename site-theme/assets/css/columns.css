@@ -10,6 +10,14 @@
     margin-top: 0;
 }
 
+.column.is-12 {
+    aspect-ratio: 0;
+}
+
+.txt .container {
+    padding: 25px;
+}
+
 @media only screen and (min-width: 600px) {
     .column {
         padding: var(--pixels);
@@ -21,10 +29,14 @@
     }
 
     .column.is-8 {
-        aspect-ratio: 2;
+
+    }
+
+    .column.is-12 {
+        height: fit-content;
 
         .container {
-            aspect-ratio: 2;
+            height: fit-content;
         }
     }
 

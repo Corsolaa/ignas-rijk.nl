@@ -16,12 +16,6 @@
         border-radius: 9px;
         transition: all .2s ease-in-out;
     }
-
-    span {
-        display: block;
-
-        padding: 25px;
-    }
 }
 
 @media only screen and (min-width: 1000px) {

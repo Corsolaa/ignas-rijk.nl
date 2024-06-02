@@ -12,11 +12,13 @@ get_header();?>
 
 <main class="page">
     <div class="content">
-        <h1>
-            <?php echo get_the_title();?>
-        </h1>
+        <div class="inside">
+            <h1>
+                <?php echo get_the_title();?>
+            </h1>
 
-        <?php echo apply_filters('the_content', get_the_content());?>
+            <?php echo apply_filters('the_content', get_the_content());?>
+        </div>
     </div>
 </main>
 

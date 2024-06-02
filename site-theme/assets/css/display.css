@@ -11,14 +11,29 @@
     display: none;
 }
 
+.hide_tablet {
+    display: block;
+}
+.hide_mobile {
+    display: block;
+}
+
 @media only screen and (min-width: 600px) {
     .dis_non_mobile {
         display: block;
+    }
+
+    .hide_mobile {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 800px) {
     .dis_non_tablet {
         display: block;
+    }
+
+    .hide_tablet {
+        display: none;
     }
 }

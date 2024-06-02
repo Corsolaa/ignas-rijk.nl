@@ -17,13 +17,13 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <div class="logo">
-        <img src="https://www.brunobouwman.nl/images/src/ignas-logo-23.webp" alt="">
+    <a class="logo text_decor_none" href="<?php echo get_home_url() ?>">
+        <img src="https://ignas-rijk.nl/wp-content/uploads/2024/02/cropped-ignas-logo-23.webp" alt="">
         <p class="title is-size-1">Ignas Rijk</p>
-    </div>
+    </a>
     <nav>
         <div class="menu-item">
-            <a class="is-size-2" style="" href="#">
+            <a class="is-size-2" href="https://ignas-rijk.nl/contact/">
                 <i style="margin-right: 15px" class="is-size-2 fa-solid fa-square-phone-flip"></i>
                 contact</a>
         </div>
